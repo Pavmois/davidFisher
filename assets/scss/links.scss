@@ -1,0 +1,227 @@
+html { font-size: 10px; background-color: #000000; background-image: url('/assets/images/main.jpeg'); background-position: center center; background-size: cover; font-family: 'witcher'; }
+body {
+    background: #b4aeae;
+    margin: 0;
+    padding: 0;
+  }
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5.8rem;
+    background-color: black;
+    z-index: 999;
+    transition: 0.6s;
+    .menu__logo {
+      position: absolute;
+      top: 0;
+      left: 2rem;
+      width: 5.8rem;
+      height: 5.8rem;
+      background-image: url('/assets/images/main/logo.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .menu__items {
+      position: relative;
+      width: 80%;
+      line-height: 5.8rem;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      justify-content: space-between;
+      .active {
+          color: red;
+      }
+      a {
+        font-size: 2.6rem;
+        cursor: pointer;
+        text-decoration: none;
+        color: white;
+        transition: 0.6s linear;
+      }
+      a:hover {
+        color: red;
+      }
+    }
+  }
+
+.links_bg {
+  position: absolute;
+  top: 0rem;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-image: url('/assets/images/links/links_bg.jpg');
+  transition: background-image 0.4s linear;
+}
+
+.donat_secret {
+  position: absolute;
+  left: 5rem;
+  top: 15rem;
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+}
+.secret {
+  background-size: cover;
+  background-image: url('/assets/images/links/donat_secret.jpg');
+}
+
+.links {
+  position: absolute;
+  right: 38%;
+  bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .links__item {
+    margin-bottom: 5rem;
+
+    a {
+      cursor: pointer;
+      font-size: 2.3rem;
+      color: white;
+      text-decoration: none;
+      transition: color 0.4s linear;
+    }
+    a:hover {
+      color: red;
+    }
+    .red {
+      color: red;
+    }
+    .red:hover {
+      color: white;
+    }
+  }
+
+}
+
+.donate {
+  position: absolute;
+  right: 31%;
+  bottom: 41%;
+  color: white;
+  transform: rotate(10deg);
+  a {
+    cursor: pointer;
+    font-size: 4rem;
+    color: white;
+    text-decoration: none;
+    transition: color 0.4s linear;
+  }
+  a:hover {
+    color: red;
+  }
+}
+
+.none {
+  display: none;
+}
+
+@media (max-width: 1366px) and (min-height: 768px) {
+  .links_bg {
+    background-image: url('/assets/images/links/1366/links_bg.jpg');
+  }
+  
+  .donat_secret {
+    left: 5rem;
+    top: 15rem;
+    font-size: 3rem;
+  }
+  .secret {
+    top: 1%;
+    background-image: url('/assets/images/links/1366/donat_secret.jpg');
+  }
+  .links {
+    right: 35%;
+    bottom: 10%;
+  }
+  .donat_secret {
+    font-size: 2rem;
+    left: 2rem;
+    top: 13rem;
+  }
+  .donate {
+    right: 31%;
+    bottom: 41%;
+    a {
+      font-size: 2.3rem;
+    }
+  }
+}
+
+@media (max-width: 1280px) and (min-height: 1024px) {
+  .links_bg {
+    background-image: url('/assets/images/links/1280/links_bg.jpg');
+  }
+  
+  .donat_secret {
+    left: 5rem;
+    top: 15rem;
+    font-size: 3rem;
+  }
+  .secret {
+    top: 1%;
+    background-image: url('/assets/images/links/1280/donat_secret.jpg');
+  }
+  .links {
+    right: 35%;
+    bottom: 10%;
+  }
+  .donat_secret {
+    font-size: 2rem;
+    left: 2rem;
+    top: 13rem;
+  }
+  .donate {
+    right: 31%;
+    bottom: 41%;
+    a {
+      font-size: 2.3rem;
+    }
+  }
+}
+
+@media (max-width: 1024px) and (min-height: 768px) {
+  .links_bg {
+    background-image: url('/assets/images/links/1024/links_bg.jpg');
+  }
+  
+  .donat_secret {
+    left: 5rem;
+    top: 15rem;
+    font-size: 3rem;
+  }
+  .secret {
+    top: 1%;
+    background-image: url('/assets/images/links/1024/donat_secret.jpg');
+  }
+  .links {
+    right: 35%;
+    bottom: 10%;
+    .links__item {
+      a {
+        font-size: 1.8rem;
+      }
+    }
+  }
+  .donat_secret {
+    font-size: 1.8rem;
+    left: 0.9rem;
+    top: 13rem;
+  }
+  .donate {
+    right: 31%;
+    bottom: 41%;
+    a {
+      font-size: 2.3rem;
+    }
+  }
+}

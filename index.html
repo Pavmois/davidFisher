@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <title>David Fisher</title>
+</head>
+<body>
+    <div class="menu">
+        <div class="menu__logo"></div>
+        <div class="menu__items">
+            <a href="/index.html" class="menu__item active">Главная</a>
+            <a href="/assets/html/gallery.html" class="menu__item transition">Галерея</a>
+            <a href="/assets/html/game.html" class="menu__item transition">Игра</a>
+            <a href="/assets/html/links.html" class="menu__item transition">Ссылки</a>
+            <a href="/assets/html/cosplay.html" class="menu__item transition">Образы</a>
+        </div>
+    </div>
+    <div class="witcherTop">
+        <!-- Первый текст -->
+        <div class="text text_1">
+            Здравствуй, путник! Что ж, ты <span>попал</span>. Но не на деньги, а...
+        </div>
+        <div class="textBlood textBlood_1"></div>
+        <!-- Второй текст -->
+        <div class="text text_2">
+            ...на сайт<br>
+            посвященный<br>
+            <span style="font-weight: 500;">David Fisher</span>
+        </div>
+        <div class="textBlood textBlood_2"></div>
+        <!-- Третий текст -->
+        <div class="text text_3">
+            Здесь ты сможешь найти<br>
+            много <span>интересной</span> инфы<br>
+            обо мне и моих стримах!
+        </div>
+        <div class="textBlood textBlood_3"></div>
+        <!-- блок с фото -->
+        <div class="text_photo">
+            <div class="text_photo-bg"></div>
+        </div>
+        <div class="text_photo2">
+            <div class="text_photo-bg"></div>
+            <div class="text_photo2-txt">Наведи</div>
+        </div>
+    </div>
+    <div class="witcherPreMid">
+        <div class="text">
+            <div class="ard"></div>
+            Здравствуй, путник!
+        </div>
+    </div>
+    <div class="witcherMid">
+        <div class="youtube_vid-txt">
+            Вы можете смотреть меня и на <span>You</span>tube.<br>
+            Там собрана вся история канала, там вы можете<br>
+            наверстать упущенное, насладиться теми моментами<br>
+            коих лишила работа\учёба\жена\муж и пришлось<br>
+            пропустить стрим, а душа требует праздника!<br>
+            <br>
+            Подробнее о том, по каким играм и с какими<br>
+            образами есть записи стримов можно узнать<br>
+            в разделе <a href="/assets/html/cosplay.html" style="cursor: pointer; color: red;" target="_blank">"Образы"</a>
+        </div> 
+        <div class="youtube_vid">
+            <iframe
+            width="1280"
+            height="720"
+            src="https://www.youtube.com/embed/XjPgTroCgA0?list=PLQgVp5ADaTZPllZx__XizbqVIdo_42z_P"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+            </iframe>
+        </div>
+
+        <div class="twitch_txt">
+            А это лишь часть<br>
+            тех якрких моментов<br>
+            коими наполнены мои <a href="/assets/html/cosplay.html" style="text-decoration: none; cursor: pointer; color: red;" target="_blank">стримы</a>
+        </div> 
+
+        <div class="twitch_vids">
+                <div class="clip" id="twitch-embed1"></div>
+                <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+                <script type="text/javascript">
+                new Twitch.Player("twitch-embed1", {
+                    video: "667669444",
+                    width: "480",
+                    height: '320',
+                    autoplay: false
+                });
+                </script>
+
+                <div class="clip" id="twitch-embed2"></div>
+                <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+                <script type="text/javascript">
+                new Twitch.Player("twitch-embed2", {
+                    video: "937140825",
+                    width: "480",
+                    height: '320',
+                    autoplay: false
+                });
+                </script>
+
+                <div class="clip" id="twitch-embed3"></div>
+                <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+                <script type="text/javascript">
+                new Twitch.Player("twitch-embed3", {
+                    video: "1229546663",
+                    time: "1h51m27s",
+                    width: "480",
+                    height: '320',
+                    autoplay: false
+                });
+                </script>
+        </div>
+
+
+        
+    </div>
+    
+    
+</body>
+<script src="/assets/js/index.js"></script>
+</html>

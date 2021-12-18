@@ -1,0 +1,347 @@
+html { font-size: 10px; background-color: #000000; background-image: url('/assets/images/main.jpeg'); background-position: center center; background-size: cover; font-family: 'witcher'; }
+
+$black: aquamarine;
+
+.page {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    font-family: 'witcher';
+    scrollbar-width: none;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+  
+  body {
+    background: #b4aeae;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  @font-face{
+    font-family: 'witcher';
+    src: url('/assets/fonts//manrope/static/Manrope-ExtraLight.ttf');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+    .menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 5.8rem;
+      background-color: black;
+      z-index: 999;
+      transition: 0.6s;
+      .menu__logo {
+        position: absolute;
+        top: 0;
+        left: 2rem;
+        width: 5.8rem;
+        height: 5.8rem;
+        background-image: url('/assets/images/main/logo.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .menu__items {
+        position: relative;
+        width: 80%;
+        line-height: 5.8rem;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: space-between;
+        .active {
+          color: red;
+      }
+        a {
+          font-size: 2.6rem;
+          cursor: pointer;
+          text-decoration: none;
+          color: white;
+          transition: 0.6s linear;
+        }
+        a:hover {
+          color: red;
+        }
+      }
+    }
+
+  .witcherTop {
+      position: relative;
+      width: 100%;
+      height: 200vh;
+      background-color: rgb(73, 151, 151);
+      background-image: url("/assets/images/main/witcher.jpg");
+      // background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      .text {
+        position: absolute;
+        font-size: 4rem;
+        z-index: 2;
+        color: white;
+        line-height: 5rem;
+        &_1 {
+          width: 30%;
+          left: 10rem;
+          top: 15%;
+        }
+        &_2 {
+          right: 5%;
+          top: 32%;
+        }
+        &_3 {
+          left: 10rem;
+          top: 65%;
+        }
+      }
+
+      .textBlood {
+        position: absolute;
+        z-index: 1;
+        background-size: contain;
+        background-repeat: no-repeat;
+        &_1 {
+          width: 30%;
+          height: 6%;
+          top: 15%;
+         // background-image: url("/assets/images/main/blood_text.png");
+        }
+        &_2 {
+          width: 25%;
+          height: 10%;
+          right: 0%;
+          top: 35%;
+         // background-image: url("/assets/images/main/blood_text2.png");
+        }
+        &_3 {
+          width: 25%;
+          height: 10%;
+          top: 57%;
+         // background-image: url("/assets/images/main/blood_text.png");
+        }
+      }
+
+      *span {
+        color: red;
+      }
+
+      .text_photo {
+        position: absolute;
+        left: 5%;
+        bottom: 5%;
+        width: 40rem;
+        height: 40rem;
+        .text_photo-bg {
+          background-image: url('/assets/images/main/text_photo1.jpg');
+          height: 100%;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          border-radius: 5%;
+          transition: background-image 0.6s linear;
+        }
+      }
+      .text_photo:hover {
+        .text_photo-bg {
+          background-image: url('/assets/images/main/text_photo1-black.jpg');
+        }
+      }
+      .text_photo2{
+        position: absolute;
+        right: 5%;
+        bottom: 20%;
+        width: 30rem;
+        height: 40rem;
+        .text_photo-bg {
+          background-image: url('/assets/images/main/text_photo2.jpg');
+          height: 100%;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          border-radius: 5%;
+          transition: background-image 0.6s linear;
+        }
+        .text_photo2-txt {
+          color: red;
+          text-align: center;
+          font-size: 2rem;
+          font-weight: bold;
+        }
+      }
+      .text_photo2:hover {
+        .text_photo-bg {
+          background-image: url('/assets/images/main/text_photo2-black.jpg');
+        }
+      }
+
+  }
+  .witcherPreMid {
+    width: 100%;
+    background-color: black;
+    font-family: 'witcher';
+    display: flex;
+    overflow: hidden;
+    .text {
+      display: flex;
+      color: white;
+      width: 100%;
+      font-size: 6.5rem;
+      text-align: center;
+      white-space: nowrap;
+      animation: nudge 15s linear infinite;
+      .ard {
+        width: 8rem;
+        background-image: url('/assets/images/main/ard.png');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+  .witcherMid {
+      position: relative;
+      width: 100%;
+      height: 200vh;
+      background-color: rgb(73, 151, 151);
+      background-image: url("/assets/images/main/witcher3.jpg");
+      // background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      // font-family: 'witcher';
+      // position: relative;
+      // height: 100vh;
+      // width: 100%;
+      // color: white;
+      // font-size: 8rem;
+      // background-color: #4d4d4d;
+
+      .youtube_vid {
+        position: relative;
+        text-align: center;
+        text-align: end;
+        margin-right: 9%;
+      }
+      .youtube_vid-txt {
+        color: white;
+        font-size: 2.5rem;
+        text-align: start;
+        margin-left: 3%;
+        position: relative;
+        padding-top: 7%;
+        span {
+          background-color: #1d1d1dce;
+          border-radius: 50%;
+          color: red;
+        }
+      }
+
+      .twitch_txt {
+        position: relative;
+        color: white;
+        font-size: 2.5rem;
+        margin-left: 72%;
+        margin-top: 15%;
+        margin-bottom: 1%;
+      }
+
+      .twitch_vids {
+        position: relative;
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .twitch-clip {
+        margin-left: 50%;
+        width: 48rem;
+        height: 32rem;
+        transition: all 0.4s linear;
+      }
+      .twitch-clip:hover {
+       transform: scale(2); 
+      }
+  }
+
+  @keyframes nudge {
+    0% { transform: translatex(100%); }
+    100% { transform: translatex(-100vw); }
+  }
+  
+
+  @media (min-width: 1024px) and (max-width: 1920px) {
+    html {
+      font-size: calc(5px + (10 - 5) * ( (100vw - 1024px) / ( 1920 - 1024) ));
+    }
+  }
+  @media (min-width: 480px) and (max-width: 1023px) {
+    html {
+      font-size: calc(3px + (8 - 5) * ( (100vw - 480px) / ( 1023 - 480) ));
+    }
+  }
+
+  //АДАПТИВНОСТЬ
+  @media (max-width: 1366px) and (min-height: 768px) {
+    .witcherMid {
+      .youtube_vid {
+        iframe {
+          width: 1024px;
+          height: 768px;
+        }
+      }
+      .twitch_txt {
+        margin-top: 5%;
+      }
+
+      .clip {
+        iframe {
+          width: 320px;
+          height: 240px;
+        }
+      }
+    }
+}
+
+@media (max-width: 1280px) and (min-height: 1024px) {
+  .swiper .swiper-slide {
+    background-size: contain;
+  }
+  .witcherMid {
+    .youtube_vid-txt {
+      padding-top: 15%;
+    }
+    .youtube_vid {
+      top: 5%;
+    }
+    .twitch_txt {
+      margin-top: 15%;
+      margin-bottom: 10%;
+    }
+
+  }
+}
+
+// @media (max-width: 1024px) and (min-height: 768px) {
+
+// }

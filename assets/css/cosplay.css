@@ -1,0 +1,223 @@
+html {
+  font-size: 10px;
+  background-color: #000000;
+  background-image: url("/assets/images/main.jpeg");
+  background-position: center center;
+  background-size: cover;
+  font-family: "witcher";
+}
+
+body {
+  background: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5.8rem;
+  background-color: black;
+  z-index: 999;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+.menu .menu__logo {
+  position: absolute;
+  top: 0;
+  left: 2rem;
+  width: 5.8rem;
+  height: 5.8rem;
+  background-image: url("/assets/images/main/logo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.menu .menu__items {
+  position: relative;
+  width: 80%;
+  line-height: 5.8rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.menu .menu__items .active {
+  color: red;
+}
+.menu .menu__items a {
+  font-size: 2.6rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  -webkit-transition: 0.6s linear;
+  transition: 0.6s linear;
+}
+.menu .menu__items a:hover {
+  color: red;
+}
+
+.cosplay__bg {
+  position: absolute;
+  top: 0rem;
+  left: -0.1rem;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-image: url("/assets/images/cosplay/cosplay.jpg");
+  -webkit-transition: background-image 0.4s linear;
+  transition: background-image 0.4s linear;
+}
+
+.cosplay__bar {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 132rem;
+  height: 22rem;
+}
+.cosplay__bar .cosplay__bar-item {
+  width: 19rem;
+  height: 19rem;
+  margin-top: calc((22rem - 19rem)/2);
+  border-radius: 20%;
+  background: rebeccapurple;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  cursor: pointer;
+  border: 3px solid grey;
+  overflow: hidden;
+  text-decoration: none;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+.cosplay__bar .cosplay__bar-item .item-txt {
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: -webkit-transform 0.6s ease-in-out;
+  transition: -webkit-transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
+  color: white;
+  font-size: 2.5rem;
+  text-align: center;
+  background-color: rgba(112, 9, 16, 0.7);
+}
+.cosplay__bar .cosplay__bar-item .item-txt span {
+  line-height: 19rem;
+}
+.cosplay__bar .cosplay__bar-item .maskDown {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+.cosplay__bar .cosplay__bar-item:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.n1 {
+  top: 16.4rem;
+  left: 14.2rem;
+}
+
+.n2 {
+  bottom: 7rem;
+  right: 5.5rem;
+}
+
+@media (max-width: 1366px) and (min-height: 768px) {
+  .cosplay__bg {
+    background-image: url("/assets/images/cosplay/1366/cosplay.jpg");
+  }
+
+  .cosplay__bar {
+    width: 94rem;
+    height: 15rem;
+  }
+  .cosplay__bar .cosplay__bar-item {
+    width: 12rem;
+    height: 12rem;
+  }
+  .cosplay__bar .cosplay__bar-item .item-txt span {
+    line-height: 12rem;
+    font-size: 1.5rem;
+  }
+
+  .n1 {
+    top: 11rem;
+    left: 14rem;
+  }
+
+  .n2 {
+    bottom: 13rem;
+    right: 5rem;
+  }
+}
+@media (max-width: 1280px) and (min-height: 1024px) {
+  .cosplay__bg {
+    background-image: url("/assets/images/cosplay/1280/cosplay.jpg");
+  }
+
+  .cosplay__bar {
+    width: 94rem;
+    height: 15rem;
+  }
+  .cosplay__bar .cosplay__bar-item {
+    width: 12rem;
+    height: 12rem;
+  }
+  .cosplay__bar .cosplay__bar-item .item-txt span {
+    line-height: 12rem;
+    font-size: 1.5rem;
+  }
+
+  .n1 {
+    top: 18rem;
+    left: 9rem;
+  }
+
+  .n2 {
+    bottom: 22rem;
+    right: 1rem;
+  }
+}
+@media (max-width: 1024px) and (min-height: 768px) {
+  .cosplay__bg {
+    background-image: url("/assets/images/cosplay/1024/cosplay.jpg");
+  }
+
+  .cosplay__bar {
+    width: 94rem;
+    height: 15rem;
+  }
+  .cosplay__bar .cosplay__bar-item {
+    width: 12rem;
+    height: 12rem;
+  }
+  .cosplay__bar .cosplay__bar-item .item-txt span {
+    line-height: 12rem;
+    font-size: 1.5rem;
+  }
+
+  .n1 {
+    top: 11rem;
+    left: 14rem;
+  }
+
+  .n2 {
+    bottom: 13rem;
+    right: 5rem;
+  }
+}
