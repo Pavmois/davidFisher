@@ -1,4 +1,4 @@
-html { font-size: 10px; background-color: #000000; background-image: url('/assets/images/main.jpeg'); background-position: center center; background-size: cover; font-family: 'witcher'; }
+html { font-size: 10px; background-color: #000000; background-image: url('../images/main.jpeg'); background-position: center center; background-size: cover; font-family: 'witcher'; }
 
 $black: aquamarine;
 
@@ -33,7 +33,7 @@ $black: aquamarine;
 
   @font-face{
     font-family: 'witcher';
-    src: url('/assets/fonts//manrope/static/Manrope-ExtraLight.ttf');
+    src: url('../fonts//manrope/static/Manrope-ExtraLight.ttf');
     font-weight: normal;
     font-style: normal;
     }
@@ -53,7 +53,7 @@ $black: aquamarine;
         left: 2rem;
         width: 5.8rem;
         height: 5.8rem;
-        background-image: url('/assets/images/main/logo.jpg');
+        background-image: url('../images/main/logo.jpg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -87,7 +87,7 @@ $black: aquamarine;
       width: 100%;
       height: 200vh;
       background-color: rgb(73, 151, 151);
-      background-image: url("/assets/images/main/witcher.jpg");
+      background-image: url("../images/main/witcher.jpg");
       // background-attachment: fixed;
       background-position: center;
       background-repeat: no-repeat;
@@ -123,20 +123,20 @@ $black: aquamarine;
           width: 30%;
           height: 6%;
           top: 15%;
-         // background-image: url("/assets/images/main/blood_text.png");
+         // background-image: url("../images/main/blood_text.png");
         }
         &_2 {
           width: 25%;
           height: 10%;
           right: 0%;
           top: 35%;
-         // background-image: url("/assets/images/main/blood_text2.png");
+         // background-image: url("../images/main/blood_text2.png");
         }
         &_3 {
           width: 25%;
           height: 10%;
           top: 57%;
-         // background-image: url("/assets/images/main/blood_text.png");
+         // background-image: url("../images/main/blood_text.png");
         }
       }
 
@@ -151,7 +151,7 @@ $black: aquamarine;
         width: 40rem;
         height: 40rem;
         .text_photo-bg {
-          background-image: url('/assets/images/main/text_photo1.jpg');
+          background-image: url('../images/main/text_photo1.jpg');
           height: 100%;
           background-repeat: no-repeat;
           background-position: center;
@@ -162,7 +162,7 @@ $black: aquamarine;
       }
       .text_photo:hover {
         .text_photo-bg {
-          background-image: url('/assets/images/main/text_photo1-black.jpg');
+          background-image: url('../images/main/text_photo1-black.jpg');
         }
       }
       .text_photo2{
@@ -172,7 +172,7 @@ $black: aquamarine;
         width: 30rem;
         height: 40rem;
         .text_photo-bg {
-          background-image: url('/assets/images/main/text_photo2.jpg');
+          background-image: url('../images/main/text_photo2.jpg');
           height: 100%;
           background-repeat: no-repeat;
           background-position: center;
@@ -189,7 +189,7 @@ $black: aquamarine;
       }
       .text_photo2:hover {
         .text_photo-bg {
-          background-image: url('/assets/images/main/text_photo2-black.jpg');
+          background-image: url('../images/main/text_photo2-black.jpg');
         }
       }
 
@@ -210,7 +210,7 @@ $black: aquamarine;
       animation: nudge 15s linear infinite;
       .ard {
         width: 8rem;
-        background-image: url('/assets/images/main/ard.png');
+        background-image: url('../images/main/ard.png');
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
@@ -222,7 +222,7 @@ $black: aquamarine;
       width: 100%;
       height: 200vh;
       background-color: rgb(73, 151, 151);
-      background-image: url("/assets/images/main/witcher3.jpg");
+      background-image: url("../images/main/witcher3.jpg");
       // background-attachment: fixed;
       background-position: center;
       background-repeat: no-repeat;
