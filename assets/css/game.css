@@ -160,3 +160,9 @@ body {
     margin-top: calc(100vh - 68rem);
   }
 }
+@media (max-width: 1300px) {
+  .resetBtn {
+    width: 5rem;
+    height: 5rem;
+  }
+}
