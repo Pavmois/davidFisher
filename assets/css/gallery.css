@@ -4,12 +4,16 @@ html {
   background-image: url("/assets/images/main.jpeg");
   background-size: cover;
   font-family: "witcher";
+  height: 100%;
+  margin: 0;
 }
 
 body {
   background: #b4aeae;
   margin: 0;
   padding: 0;
+  height: 100%;
+  margin: 0;
 }
 
 .menu {
@@ -62,78 +66,58 @@ body {
   color: red;
 }
 
-.swiper {
+.parallax {
   position: relative;
-  top: 5.8rem;
-  width: 100vw;
-  height: calc(100vh - 5.8rem);
-  background-color: black;
-}
-.swiper .swiper-slide {
-  background-size: contain;
+  background-attachment: fixed;
+  background-position: center 0;
   background-repeat: no-repeat;
-  background-position-x: center;
-}
-.swiper .swiper-button-prev,
-.swiper .swiper-button-next {
-  color: white;
-  width: 9rem;
-  height: 9rem;
-  background-color: #6B0505;
-  border-radius: 50%;
-  opacity: 0.5;
-  transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-  /** Chrome & Safari **/
-  -moz-transition: all 0.4s ease-in-out;
-  /** Firefox **/
-  -o-transition: all 2s ease-in-out;
-  /** Opera **/
-}
-.swiper .swiper-button-prev:hover,
-.swiper .swiper-button-next:hover {
-  background-color: #a71a1a;
-  opacity: 0.8;
-}
-.swiper .swiper-button-prev:hover::after {
-  transform: translate(-50%, 0);
-  -webkit-transform: translate(-50%, 0);
-  /** Chrome & Safari **/
-  -o-transform: translate(-50%, 0);
-  /** Opera **/
-  -moz-transform: translate(-50%, 0);
-  /** Firefox **/
-  transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-  /** Chrome & Safari **/
-  -moz-transition: all 0.4s ease-in-out;
-  /** Firefox **/
-  -o-transition: all 0.4s ease-in-out;
-  /** Opera **/
-}
-.swiper .swiper-button-next:hover::after {
-  transform: translate(50%, 0);
-  -webkit-transform: translate(50%, 0);
-  /** Chrome & Safari **/
-  -o-transform: translate(50%, 0);
-  /** Opera **/
-  -moz-transform: translate(50%, 0);
-  /** Firefox **/
-  transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-  /** Chrome & Safari **/
-  -moz-transition: all 0.4s ease-in-out;
-  /** Firefox **/
-  -o-transition: all 0.4s ease-in-out;
-  /** Opera **/
-}
-.swiper .swiper-pagination-bullet {
-  background: aqua;
-}
-.swiper .swiper-pagination-bullet-active {
-  background: #a71a1a;
+  background-size: cover;
+  /**
+   * Default height
+   */
+  height: 100%;
 }
 
+.caption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+}
+
+.caption .border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.text {
+  text-align: center;
+  text-align: justify;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
 @media (max-width: 1280px) and (min-height: 1024px) {
   .swiper .swiper-slide {
     background-size: cover;
