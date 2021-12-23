@@ -22,6 +22,7 @@ const cards = document.querySelectorAll('.memory-card');
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
+let flipNums = [];
 
 function flipCard() {
   if (lockBoard) return;
@@ -48,7 +49,7 @@ function checkForMatch() {
 function disableCards() {
   firstCard.removeEventListener('click', flipCard);
   secondCard.removeEventListener('click', flipCard);
-
+  flipNums.push('1')
   resetBoard();
 }
 
@@ -93,3 +94,10 @@ $('.resetBtn').on('click', function(){
 })
 
 $("#mydiv").load(location.href + " #mydiv");
+
+$('body').on('click', function() {
+  console.log('ARRAY', flipNums.length);
+  if (flipNums.length === 6) {
+    alert('ПОБЕДА');
+  }
+})
