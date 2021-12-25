@@ -49,6 +49,10 @@ body {
       }
     }
   }
+  ::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
   .parallax {
     position: relative;
     background-attachment: fixed;
