@@ -157,6 +157,8 @@ $black: aquamarine;
           background-position: center;
           background-size: cover;
           border-radius: 5%;
+          -webkit-transition: -webkit-transform 0.5s;
+          transition: background-image 0.6s, -webkit-transform 0.6s;
           transition: background-image 0.6s linear;
         }
       }
@@ -178,6 +180,8 @@ $black: aquamarine;
           background-position: center;
           background-size: cover;
           border-radius: 5%;
+          -webkit-transition: -webkit-transform 0.5s;
+          transition: background-image 0.6s, -webkit-transform 0.6s;
           transition: background-image 0.6s linear;
         }
         .text_photo2-txt {
