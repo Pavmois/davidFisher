@@ -88,10 +88,11 @@ $("#mydiv").load(location.href + " #mydiv");
 
 //ФУНКЦИЯ ПОДСЧЁТА ПРАВИЛЬНЫХ ОТВЕТОВ
 $('body').on('click', function() {
-  if (flipNums.length === 1) {
+  if (flipNums.length === 6) {
     $('.memory-card').addClass('up')
     $('.win').css('opacity', '1')
     $('.win').css('z-index', '1')
+    $('.win').css('pointer-events', 'auto')
   }
 })
 
