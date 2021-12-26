@@ -288,6 +288,10 @@ $black: aquamarine;
       }
   }
 
+  .mobileDev {
+    display: none;
+  }
+
   @keyframes nudge {
     0% { transform: translatex(100%); }
     100% { transform: translatex(-100vw); }
@@ -346,6 +350,34 @@ $black: aquamarine;
   }
 }
 
-// @media (max-width: 1024px) and (min-height: 768px) {
+@media (max-width: 1279px) {
 
-// }
+  .menu,
+  .witcherTop,
+  .witcherPreMid,
+  .witcherMid {
+    display: none;
+  }
+
+  .mobileDev {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    text-align: left;
+    z-index: 999;
+
+    background-image: url('/assets/images/game/witcher.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    span {
+      font-size: 5rem;
+      font-weight: bolder;
+    }
+  }
+}

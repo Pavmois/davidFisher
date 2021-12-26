@@ -7,7 +7,6 @@ html {
 }
 
 body {
-  background: #b4aeae;
   margin: 0;
   padding: 0;
 }
@@ -80,6 +79,12 @@ body {
   font-size: 3rem;
   color: white;
   cursor: pointer;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+.donat_secret:hover {
+  color: red;
 }
 
 .secret {
@@ -207,6 +212,8 @@ body {
     font-size: 2rem;
     left: 2rem;
     top: 13rem;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
   }
 
   .donate {
@@ -215,6 +222,38 @@ body {
   }
   .donate a {
     font-size: 2.3rem;
+  }
+}
+.mobileDev {
+  display: none;
+}
+
+@media (max-width: 1279px) {
+  .menu,
+.links_bg,
+.donat_secret,
+.links {
+    display: none;
+  }
+
+  .mobileDev {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    text-align: left;
+    z-index: 999;
+    background-image: url("/assets/images/game/witcher.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .mobileDev span {
+    font-size: 5rem;
+    font-weight: bolder;
   }
 }
 @media (max-width: 1024px) and (min-height: 768px) {

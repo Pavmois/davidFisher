@@ -136,6 +136,10 @@ body {
   right: 5.5rem;
 }
 
+.mobileDev {
+  display: none;
+}
+
 @media (max-width: 1366px) and (min-height: 768px) {
   .cosplay__bg {
     background-image: url("/assets/images/cosplay/1366/cosplay.jpg");
@@ -190,6 +194,33 @@ body {
   .n2 {
     bottom: 22rem;
     right: 1rem;
+  }
+}
+@media (max-width: 1279px) {
+  .menu,
+.cosplay__bg,
+.cosplay__bar {
+    display: none;
+  }
+
+  .mobileDev {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    text-align: left;
+    z-index: 999;
+    background-image: url("/assets/images/game/witcher.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .mobileDev span {
+    font-size: 5rem;
+    font-weight: bolder;
   }
 }
 @media (max-width: 1024px) and (min-height: 768px) {

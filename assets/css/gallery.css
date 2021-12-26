@@ -9,7 +9,6 @@ html {
 }
 
 body {
-  background: #b4aeae;
   margin: 0;
   padding: 0;
   height: 100%;
@@ -123,8 +122,39 @@ h3 {
     background-attachment: scroll;
   }
 }
+.mobileDev {
+  display: none;
+}
+
 @media (max-width: 1280px) and (min-height: 1024px) {
   .swiper .swiper-slide {
     background-size: cover;
+  }
+}
+@media (max-width: 1279px) {
+  .menu,
+.parallax,
+.text {
+    display: none;
+  }
+
+  .mobileDev {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    text-align: left;
+    z-index: 999;
+    background-image: url("/assets/images/game/witcher.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .mobileDev span {
+    font-size: 5rem;
+    font-weight: bolder;
   }
 }
